@@ -24,7 +24,7 @@
     
 #   puts "Do you want to do that again?"
 #   answer = gets.chomp.chomp
-#   if answer != 'Y' || answer != "yes" || answer != "Yes"
+#   if answer != 'Y' || answer != "yes" || answer != "Yes" ||
 #     break
 #   end
 # end
@@ -35,9 +35,9 @@ puts "would you like to calculate the area, or the circumference of the circle?"
 area_circ=gets.chomp
 
 if area_circ== "area" || area_circ== "Area"
-    puts "#{radius}".to_i*"3.14159265359"**
+    puts "#{radius}".to_f*"3.14159265359".to_f**2
 elsif area_circ== "circumference" || area_circ== "circ"
-    puts "#{radius}".to_i*"2".to_i*"3.14159265359".to_i
+    puts "#{radius}".to_f*"2".to_f*"3.14159265359".to_f
 else 
     puts "Please input a valid option"
 end
